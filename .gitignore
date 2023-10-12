@@ -68,3 +68,13 @@ typings/
 
 #Dev
 docs/test.html
+.idea
+terraform/.terraform/
+
+*.tfstate
+
+*.backup
+
+*.tfvars
+
+terraform/.terraform.tfstate.lock.info

@@ -1,0 +1,88 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+  labels:
+    app: my-app
+  namespace: demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: petclinic
+          image: europe-west4-docker.pkg.dev/gbo-conf-1/repo-1/my-app:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DB_NAME
+              value: my-database
+            - name: DB_PORT
+              value: "5432"
+            - name:  INSTANCE_HOST
+              value: 34.90.217.248
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: db-secret
+                  key: username
+            - name: DB_PASS
+              valueFrom:
+                secretKeyRef:
+                  name: db-secret
+                  key: password
+          livenessProbe:
+            httpGet:
+              port: 8080
+              path: /
+          readinessProbe:
+            httpGet:
+              port: 8080
+              path: /
+          startupProbe:
+            httpGet:
+              port: 8080
+              path: /
+            failureThreshold: 30
+            periodSeconds: 10
+          resources:
+            requests:
+              cpu: 250m
+              memory: 512Mi
+            limits:
+              cpu: 500m
+              memory: 1Gi
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+  namespace: demo
+spec:
+  selector:
+    app: my-app
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: basic-ingress
+  namespace: demo
+spec:
+  defaultBackend:
+    service:
+      name: my-service
+      port:
+        number: 8080
