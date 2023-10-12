@@ -54,7 +54,7 @@ Notes: @Gaetan
 
 ```bash
 gcloud iam workload-identity-pools create "my-pool" \
-  --project="${PROJECT_ID}" \
+  --project="gbo-conf-1" \
   --location="global" \
   --display-name="Demo pool"  
 ```
@@ -90,7 +90,7 @@ JSON Web Key Set (JWKS) clés publiques validation JWT
 
 ```bash[|4]
 gcloud iam service-accounts add-iam-policy-binding "gar-pusher@gbo-conf-1.iam.gserviceaccount.com" \
-  --project="${PROJECT_ID}" \
+  --project="gbo-conf-1" \
   --role="roles/iam.workloadIdentityUser" \
   --member="principalSet://iam.../${WK_PROVIDER_NAME}/attribute.repository/bogaertg/my-app"
 ```
