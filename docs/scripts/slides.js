@@ -1,7 +1,7 @@
 import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-school-theme.mjs';
 
 function introSlides() {
-  return ['00-intro/00-title.md','00-intro/01-speaker-lbi.md','00-intro/02-speaker-gbo.md', '00-intro/04-intro.md'];
+  return ['00-intro/00-title.md', '00-intro/02-speaker-gbo.md', '00-intro/03-speaker-ada.md', '00-intro/04-intro.md'];
 }
 
 function introAuthnAutz() {
@@ -17,7 +17,7 @@ function tokenExchange() {
 }
 
 function gcWorld() {
-  return ['04-in-gc-world/00-intro.md','04-in-gc-world/01-workload-identity-federation.md','04-in-gc-world/02-workload-identity.md'];
+  return ['04-in-gc-world/00-intro.md', '04-in-gc-world/01-workload-identity-federation.md', '04-in-gc-world/02-workload-identity.md'];
 }
 
 function vault() {

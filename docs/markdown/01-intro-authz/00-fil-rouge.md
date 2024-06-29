@@ -1,14 +1,14 @@
 <!-- .slide -->
 # New mission, new infrastructure we got
 
-* Github repository (Go app) 
+* Github repository (Go app)
 * CI (Github actions)
 * Package/Image registry (Google Artifact Registry)
 * Execution environment (Google Kubernetes Engine)
 * Data storage system (Google Cloud Storage, PostgreSQL)
 <!-- .element: class="list-fragment" -->
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 <!-- .slide: -->
@@ -19,7 +19,7 @@ Notes: @Louis
 
 Notes: @Gaetan
 
-##==## 
+##==##
 ## Credentials
 ### Where are you ?
 <!-- .slide: -->
@@ -61,7 +61,7 @@ Notes: @Gaetan
 
 ![ h-600 center](./assets/images/facepalm-chair.gif)
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 <!-- .slide: -->
@@ -83,7 +83,7 @@ Notes: @Gaetan
 
 ![center h-400](./assets/images/ci_cred.png)
 
-* Solutions: 
+* Solutions:
   * Service account key file (RSA private key)
 
 Notes: @Gaetan

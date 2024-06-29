@@ -18,5 +18,4 @@
 ### bogaert.g@sfeir.com
 <!-- .element: class="icon-mail icon-second" -->
 
-Notes: @Louis
-
+Notes: @Alex

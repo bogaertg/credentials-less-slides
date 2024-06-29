@@ -2,21 +2,21 @@
 
 # 👋
 
-![speaker](./assets/images/gb.jpg)
+![speaker](./assets/images/ada.png)
 ![company](./assets/images/logo-sfeir-blanc.png)
 
 ![badge first-badge](./assets/images/gcp_archi_badge.png)
 ![badge second-badge](./assets/images/vault-associate-badge.png)
-![badge third-badge](./assets/images/vault-pro-badge.png)
+![badge third-badge](./assets/images/terraform-associate-badge.png)
+<!-- ![badge third-badge](./assets/images/kubernetes-administrator-badge.png) -->
 
 
-<h2>Gaetan <span>BOGAERT</span></h2>
+<h2>Alexandre <span>DATH</span></h2>
 
-### Site Reliability Engineer
+### Cloud Architect
 <!-- .element: class="icon-rule icon-first" -->
 
-### bogaert.g@sfeir.com
+### dath.a@sfeir.com
 <!-- .element: class="icon-mail icon-second" -->
 
-Notes: @Louis
-
+Notes: @Alex

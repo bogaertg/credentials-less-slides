@@ -8,7 +8,7 @@
 * Who liked it ?
 <!-- .element: class="list-fragment" -->
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 
@@ -21,7 +21,7 @@ Notes: @Louis
 </blockquote>
 Me, 28 sept 2023
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 
@@ -31,7 +31,7 @@ Notes: @Louis
 
 ![h-600 center](./assets/images/swear.gif)
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 
@@ -39,4 +39,4 @@ Notes: @Louis
 
 ![h-600 center](./assets/images/later.jpeg)
 
-Notes: @Louis
+Notes: @Alex
