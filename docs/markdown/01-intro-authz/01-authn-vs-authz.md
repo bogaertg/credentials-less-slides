@@ -1,7 +1,7 @@
 <!-- .slide: class="transition-bg-green-2" -->
 # A bit of theory
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 <!-- .slide: class="quote-slide" -->
@@ -15,7 +15,7 @@ Notes: @Louis
 </blockquote>
 Larousse en ligne, 18 sept 2023
 
-Notes: @Louis
+Notes: @Alex
 Identifier n'est pas authentifier, c'est associer une identité à un acteur
 
 ##==##
@@ -30,8 +30,8 @@ Identifier n'est pas authentifier, c'est associer une identité à un acteur
 </blockquote>
 Le Robert en ligne, 18 sept 2023
 
-Notes: @Louis
-3 facteur d'authentification dans le monde physique : 
+Notes: @Alex
+3 facteur d'authentification dans le monde physique :
 - ce que l'on est (emprinte digitale, rétinienne, ...)
 - ce que l'on a (clé, carte d'accès, ...)
 - ce que l'on sait (mot de passe, secret partagé, ...)
@@ -50,7 +50,7 @@ Dans le monde applicatif, ça se résume à 1 : ce que l'on sait
 </blockquote>
 Larousse en ligne, 18 sept 2023
 
-Notes: @Louis
+Notes: @Alex
 On est pas obligé d'identifier pour autoriser (c.f. bon au porteur, valet key, ..)
 
 ##==##
@@ -65,4 +65,4 @@ On est pas obligé d'identifier pour autoriser (c.f. bon au porteur, valet key, 
 </blockquote>
 Moi, 28 sept 2023
 
-Notes: @Louis
+Notes: @Alex

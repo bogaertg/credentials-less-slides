@@ -1,7 +1,7 @@
 <!-- .slide: class="transition-bg-green-3" -->
 # Oauth2, one way to do authorization
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 <!-- .slide: class="two-column"-->
@@ -17,7 +17,7 @@ Notes: @Louis
 
 <br/><br/>
 <br/><br/>
-<br/><br/>  
+<br/><br/>
 
 ##--##
 
@@ -55,7 +55,7 @@ Notes: @Louis
 
 </div>
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 <!-- .slide -->
@@ -63,7 +63,7 @@ Notes: @Louis
 ## One abstract flow
 ![center](./assets/images/abstract_flow.png)
 
-Notes: @Louis
+Notes: @Alex
 
 Lister les 4 rôles : resource owner, client, resource server et authorization server
 Prendre pour exemple une application de gestion de photos
@@ -79,7 +79,7 @@ Prendre pour exemple une application de gestion de photos
 * Token exchange (RFC 8693)
 * Your own (RFC 6749)
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 <!-- .slide -->
@@ -87,5 +87,5 @@ Notes: @Louis
 ## Token Exchange (RFC8693)
 ![center  ](./assets/images/token_exchange.png)
 
-Notes: @Louis
+Notes: @Alex
   L'authorization server fait office dans ce cas de "Security Token Service"

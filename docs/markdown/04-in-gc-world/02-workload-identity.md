@@ -6,7 +6,7 @@
   * Service account key file
 <!-- .element: class="list-fragment" -->
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 <!-- .slide: -->
@@ -18,7 +18,7 @@ Notes: @Louis
 * Solutions:
   * ~~Service account key file~~ (credential-less ❌)
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 <!-- .slide: -->
@@ -31,7 +31,7 @@ Notes: @Louis
   * ~~Service account key file~~ (credential-less ❌)
   * Use GKE node service account
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 <!-- .slide: -->
@@ -44,7 +44,7 @@ Notes: @Louis
   * ~~Service account key file~~ (credential-less ❌)
   * ~~Use GKE node service account~~ (credential-less ✅) (least privilege ❌) (isolation ❌)
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 <!-- .slide: -->
@@ -61,7 +61,7 @@ Notes: @Louis
   * Use Kubernetes identity 🤔
 <!-- .element: class="list-fragment" -->
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 <!-- .slide: -->
@@ -73,7 +73,7 @@ Notes: @Louis
 
 ![center h-600](./assets/images/workload_identity.png)
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 
@@ -94,7 +94,7 @@ metadata:
 ```
 <!-- .element: class="big-code" -->
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 
@@ -111,7 +111,7 @@ gcloud iam service-accounts add-iam-policy-binding gcs-bucket@gbo-conf-1.iam.gse
 ```
 <!-- .element: class="big-code" -->
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 
@@ -121,7 +121,7 @@ Notes: @Louis
 
 ![h-500 center](./assets/images/applause2.gif)
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 
@@ -131,7 +131,7 @@ Notes: @Louis
 
 ![h-500 center](./assets/images/ah.gif)
 
-Notes: @Louis
+Notes: @Alex
 
 ##--##
 
@@ -139,4 +139,4 @@ Notes: @Louis
 
 ![h-300](./assets/images/bdd_cred.png)
 
-Notes: @Louis
+Notes: @Alex

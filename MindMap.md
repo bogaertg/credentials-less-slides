@@ -1,7 +1,7 @@
 ```mermaid
 mindmap
   root((Arrêtons de "rotater" les clés ! Et si on osait le credential-less ?))
-    1 ))1.Id vs authn vs authz((
+    ))Id vs authn vs authz((
         identification = "Préciser la nature de quelque chose, son type, sa catégorie, pouvoir dire ce que c'est" c.f. Larousse
         authentification = "Dont l'autorité, la réalité, la vérité ne peut être contestée." c.f. le robert
             facteurs d'authentification pour les êtres humains
@@ -9,25 +9,25 @@ mindmap
                 possession = carte d'identité, passeport, acte de naissance, etc
                 constitution = empreinte digitale, emprinte rétinienne, ADN, etc
             facteurs d'authentification pour les applications
-                connaissance = API key / token JWT / etc 
+                connaissance = API key / token JWT / etc
                 utilisation de cryptographie car facile à deviner
         autorisation = "donner à un acteur la permission, le droit de faire quelque chose, rendre possible son action, lui permettre d'user de quelque chose" c.f. larousse
-    2 ))2.Use case((
+    ))Use case((
         CI/CD
         GCP
         GKE
         PG
-    2. Protocoles d'identitication
-      1. Oauth2 et le token exchange
-      2. la fédération d'identité
-    3. La fédération d'identité dans les vrais outils de la vraie vie de tous les jours
-      1. GCP (workload identity)
-      2. Kubernetes
-      3. Github
-      4. Vault
-    4. Comment gérer les cas où la fédération d'identité n'est pas possible ?
-      1. Injection et rotation de secrets via Vault Operator
-      2. Vault dynamic secret pour les bases de données
+    ))Protocoles d'identitication((
+        Oauth2 et le token exchange
+        la fédération d'identité
+    ))La fédération d'identité dans les vrais outils de la vraie vie de tous les jours((
+        GCP - workload identity
+        Kubernetes
+        Github
+        Vault
+    ))Comment gérer les cas où la fédération d'identité n'est pas possible ?((
+        Injection et rotation de secrets via Vault Operator
+        Vault dynamic secret pour les bases de données
 ```
 
 -----------------------
@@ -53,30 +53,29 @@ sequenceDiagram
     Vault Operator (Kubernetes)->>Vault (Vault): Sync Dynamic Secret
     Vault Operator (Kubernetes)->>MyApp (Kubernetes): Inject database auth
     MyApp (Kubernetes)->>Postgresql (postgresql): Write lines
-    
 ```
 
-Credential Github -> GCP (GAR) => Workload identity federation
-GKE -> pull image docker from gar (authz sa node)
-POD => Bucket => Workload identity
+- Credential Github -> GCP (GAR) => Workload identity federation
+- GKE -> pull image docker from gar (authz sa node)
+- POD => Bucket => Workload identity
 
 Vault:
-Auth Kubernetes => Token exchange
-Secret statique
-Secret dynamique Postgresql
+- Auth Kubernetes => Token exchange
+- Secret statique
+- Secret dynamique Postgresql
 
 
 # Contents
 
 0. Le fil rouge (la démo)
-1. Authz vs Autn  (@Louis)
-2. Oauth2 & TokenExchange (@Louis)
+1. Authz vs Autn  (@Alex)
+2. Oauth2 & TokenExchange (@Alex)
 3. Application Google Cloud (ou autre csp)
-   4. Workload identity Federation  (@Gaetan)
-      5. Démo Github / Google (@Gaetan)
-   6.  Workload identity (GKE) (@Gaetan)
-      7. Démo GKE/ GCS (@Gaetan)
-8. .....
-   9. Vault (@Alex)
-      10. Injection et rotation de secrets via Vault Operator
-      11. Demo Vault dynamic secret pour les bases de données
+    1. Workload identity Federation  (@Gaetan)
+        1. Démo Github / Google (@Gaetan)
+    2. Workload identity (GKE) (@Gaetan)
+        1. Démo GKE/ GCS (@Gaetan)
+4. .....
+    1. Vault (@Alex)
+        1. Injection et rotation de secrets via Vault Operator
+        2. Demo Vault dynamic secret pour les bases de données

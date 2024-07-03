@@ -4,7 +4,7 @@
 
 ![center h-700](./assets/images/applause_all.gif)
 
-Notes: @Louis
+Notes: @Alex
 
 
 ##==##
@@ -20,19 +20,19 @@ Notes: @Louis
 * No more excuse for storing credentials
 <!-- .element: class="list-fragment" -->
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 <!-- .slide: class="transition bg-green-2" -->
 # 🙏 Merci
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 <!-- .slide: class="transition bg-green-1" -->
 # Questions ？
 
-Notes: @Louis
+Notes: @Alex
 
 ##==##
 <!-- .slide: class="two-column" -->
@@ -47,4 +47,3 @@ Notes: @Louis
 
 
 ![float-center h-500](./assets/images/slides.png)
-
