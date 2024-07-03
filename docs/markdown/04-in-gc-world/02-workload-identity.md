@@ -66,7 +66,7 @@ Notes: @Alex
 ##==##
 <!-- .slide: -->
 
-## Workload Identity
+## Workload Identity Federation for GKE
 
 * GA since March 16, 2020
 * Allows a Kubernetes service account to act as a Google service account
@@ -104,10 +104,11 @@ Notes: @Alex
 
 ### Google Cloud
 
-```bash[|3]
+```bash[|3-4]
 gcloud iam service-accounts add-iam-policy-binding gcs-bucket@gbo-conf-1.iam.gserviceaccount.com \
     --role roles/iam.workloadIdentityUser \
-    --member "serviceAccount:gbo-conf-1.svc.id.goog[kns/ksa]"
+    --member "principal://iam.../${WK_PROVIDER_NAME}/
+          gbo-conf-1.svc.id.goog/subject/ns/${KUBE_NS}/sa/${KUBE_SA}"
 ```
 <!-- .element: class="big-code" -->
 

@@ -5,7 +5,7 @@ On GKE Cluster
 helm repo add hashicorp https://helm.releases.hashicorp.com
 helm repo update
 helm install vault hashicorp/vault -n vault --create-namespace --values vault.yaml
-helm install vault-secrets-operator hashicorp/vault-secrets-operator --version 0.3.1 -n vault-secrets-operator-system --create-namespace
+helm install vault-secrets-operator hashicorp/vault-secrets-operator --version 0.7.1 -n vault-secrets-operator-system --create-namespace
 ```
 
 # Term 2
@@ -22,7 +22,7 @@ vault secrets enable database
 vault write database/config/my-postgresql-database \
     plugin_name="postgresql-database-plugin" \
     allowed_roles="my-role,my-static-role" \
-    connection_url="postgresql://{{username}}:{{password}}@${CLOUD_SQL_IP}:5432/my-database" \
+    connection_url="postgresql://{{username}}:{{password}}@34.141.134.134:5432/my-database" \
     username="postgres" \
     password="password" \
     password_authentication="scram-sha-256" \

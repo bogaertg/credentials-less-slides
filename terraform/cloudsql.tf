@@ -124,6 +124,6 @@ resource "local_file" "demo" {
 }
 
 resource "local_file" "deployment" {
-  content  = templatefile( "${path.module}/template/deployment.yaml.tftpl",{CLOUD_SQL_IP = google_sql_database_instance.instance.public_ip_address} )
+  content  = templatefile( "${path.module}/template/deployment.yaml.tftpl",{CLOUD_SQL_IP = google_sql_database_instance.instance.public_ip_address,PROJECT_ID = var.project_id} )
   filename = "${path.module}/k8s/deployment.yaml"
 }

@@ -1,7 +1,7 @@
 import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-school-theme.mjs';
 
 function introSlides() {
-  return ['00-intro/00-title.md', '00-intro/02-speaker-gbo.md', '00-intro/03-speaker-ada.md', '00-intro/04-intro.md'];
+  return ['00-intro/00-title.md', '00-intro/02-speaker-ada.md','00-intro/03-speaker-gbo.md', '00-intro/04-intro.md'];
 }
 
 function introAuthnAutz() {

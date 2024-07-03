@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: petclinic
-          image: europe-west4-docker.pkg.dev/gbo-conf-1/repo-1/my-app:latest
+          image: europe-west4-docker.pkg.dev/${PROJECT_ID}/repo-1/my-app:latest
           ports:
             - containerPort: 8080
           env:
