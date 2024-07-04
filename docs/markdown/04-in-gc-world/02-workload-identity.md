@@ -104,11 +104,12 @@ Notes: @Alex
 
 ### Google Cloud
 
-```bash[|3-4]
+```bash[|3-5]
 gcloud iam service-accounts add-iam-policy-binding gcs-bucket@gbo-conf-1.iam.gserviceaccount.com \
     --role roles/iam.workloadIdentityUser \
-    --member "principal://iam.../${WK_PROVIDER_NAME}/
-          gbo-conf-1.svc.id.goog/subject/ns/${KUBE_NS}/sa/${KUBE_SA}"
+    --member "principal://iam.googleapis.com/projects/${PROJECT_NUMBER}/locations/global/
+                workloadIdentityPools/${PROJECT_ID}.svc.id.goog/
+                subject/ns/${KUBE_NS}/sa/${KUBE_SA}"
 ```
 <!-- .element: class="big-code" -->
 
