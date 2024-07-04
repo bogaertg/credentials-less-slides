@@ -60,24 +60,12 @@ Notes: @Alex
 ##==##
 <!-- .slide -->
 # What's Oauth2 ?
-## One abstract flow
-![center](./assets/images/abstract_flow.png)
-
-Notes: @Alex
-
-Lister les 4 rôles : resource owner, client, resource server et authorization server
-Prendre pour exemple une application de gestion de photos
-
-##==##
-<!-- .slide -->
-# What's Oauth2 ?
-## Many grant ypes
+## Many grant types
 
 * Authorization code (RFC 6749) / PKCE (RFC 7636)
 * Device code (RFC 8628)
 * Client credential (RFC 6749)
 * Token exchange (RFC 8693)
-* Your own (RFC 6749)
 
 Notes: @Alex
 
