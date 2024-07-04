@@ -12,7 +12,7 @@ Notes: @Alex
 
 # Conclusion
 
-* Credentials rotation is 💩
+* Managing credentials rotation is 💩
 * Oauth2 is your best friend
 * Token exchange is no magic
 * Google and Github do it well, but so do many other providers
