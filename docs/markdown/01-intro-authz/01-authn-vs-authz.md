@@ -63,6 +63,6 @@ On est pas obligé d'identifier pour autoriser (c.f. bon au porteur, valet key, 
   Le but du credential-less est d'autoriser un acteur authentifié sans avoir à gérer les informations d'identifications (les credentials).
 </cite>
 </blockquote>
-Moi, 28 sept 2023
+Moi, 5 Juillet 2024
 
 Notes: @Alex
